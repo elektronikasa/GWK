@@ -1,0 +1,66 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block headerScripts %}
+<style>
+
+		/*
+			You can add your custom layer styles
+			in the style attribute of the layer,
+			to a style element or
+			to an external css file
+		*/
+
+		#layerslider * {
+			font-family: Lato, 'Open Sans', sans-serif;
+		}
+
+		.ls-container, .ls-slide, .ls-inner, .ls-lt-container, .ls-bg {
+			-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+			-moz-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+			-ms-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+			mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+
+	</style>
+{% endblock %}
+
+
+{% block content %}
+  {% include "sections/home/slider.html" %}
+{% endblock %}
+
+{% block pageScripts %}
+<script type="text/javascript">
+// Running the code when the document is ready
+$(document).ready(function(){
+    // Calling LayerSlider on the target element
+    $('#layerslider').layerSlider({
+        // Slider options goes here,
+        // please check the 'List of slider options' section in the documentation
+        sliderVersion:'6.0.0',
+        type:'fullwidth',
+        responsiveUnder:1200,
+        maxRatio:1,
+        hideUnder:0,
+        hideOver:100000,
+        navPrevNext:true,
+        navStartStop:true,
+        navButtons:true,
+        hoverPrevNext:true,
+        touchNav:true,
+        skin:'v6',
+        skinsPath:'/images/skins/',
+        height:756
+        });
+    });
+</script>
+{% endblock %}

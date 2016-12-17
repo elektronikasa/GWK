@@ -1,0 +1,43 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "shared/app-icons.html" %}
+    {% block head %}{% endblock %}
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {% block headerScripts %}{% endblock %}
+  </head>
+  <body>
+    {% include "global/header.html" %}
+    <!-- start main content container -->
+    <div class="container-fluid" id="desktop-header">
+    {% block content %}{% endblock %}
+    </div>
+    <!-- end main content container -->
+    {% include "global/footer.html" %}
+    </div>
+    {% block javascript %}
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
+      <script src="javascripts/plugins.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    {% endblock %}
+
+    <!-- custom page scripts -->
+    {% block pageScripts %}{% endblock %}
+  </body>
+</html>

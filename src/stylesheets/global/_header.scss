@@ -1,0 +1,63 @@
+#desktop-header header {
+  height: 73px;
+  line-height: 73px;
+	background-color: #2d2d2d;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+#desktop-header header .logo {
+  width: 78px;
+	height: 54px;
+	object-fit: contain;
+  margin-left: 22px;
+  margin-top:5
+}
+
+#desktop-header header nav ul {
+  font-family: 'AmsiProCond';
+  font-size: 17px;
+  list-style: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#desktop-header header nav ul li {
+  margin-left: 4px;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#desktop-header header nav ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+	height: 40px;
+  line-height: 40px;
+  border: solid 1px #2d2d2d;
+  color: #e6e2cb;
+}
+
+#desktop-header header nav ul li .active {
+  padding-left: 20px;
+  padding-right: 20px;
+	height: 40px;
+  line-height: 40px;
+	border-radius: 70px;
+	border: solid 1px #979797;
+  color: #ffffff;
+}
+
+#desktop-header header nav ul li:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+	height: 40px;
+  line-height: 40px;
+	border-radius: 70px;
+	border: solid 1px #e6e2cb;
+  color: #e6e2cb;
+}

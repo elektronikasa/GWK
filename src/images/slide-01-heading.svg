@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="285px" height="74px" viewBox="0 0 285 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" line-spacing="53" font-style="condensed">
+        <g id="Homepage" transform="translate(-578.000000, -412.000000)" fill="#463F3B">
+            <g id="banner" transform="translate(0.000000, 72.000000)">
+                <g id="copy" transform="translate(576.000000, 315.000000)">
+                    <g id="Group-3">
+                        <text id="WELCOME-TO" font-family="AmsiProCond-Bold" font-size="28" font-weight="bold">
+                            <tspan x="81.206" y="24">WELCOME TO</tspan>
+                        </text>
+                        <text id="GWK-FARMS" font-family="AmsiProCond-Black" font-size="66" font-weight="700">
+                            <tspan x="0" y="102">GWK FARMS</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
