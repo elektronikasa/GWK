@@ -19,6 +19,8 @@
     {% block headerScripts %}{% endblock %}
   </head>
   <body>
+
+    <div canvas="container">
     {% include "global/header.html" %}
     <!-- start main content container -->
     <div class="container-fluid" id="desktop-header">
@@ -27,17 +29,83 @@
     <!-- end main content container -->
     {% include "global/footer.html" %}
     </div>
+    {% include "global/slidebar.html" %}
+
     {% block javascript %}
       <script src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
       crossorigin="anonymous"></script>
       <script src="javascripts/app.js"></script>
       <script src="javascripts/plugins.js"></script>
+      <script src="https://www.adchsm.com/slidebars/bower_components/Slidebars/dist/slidebars.min.js"></script>
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     {% endblock %}
 
     <!-- custom page scripts -->
     {% block pageScripts %}{% endblock %}
+
+    <script type="text/javascript">
+
+    ( function ( $ ) {
+	$( function () {
+        /**
+         * Slidebars Controller
+         */
+
+        // Init
+		var controller = new slidebars();
+		controller.init();
+
+		// Toggle main menu
+		$( '.spinner-master2' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+			controller.toggle( 'mobile-menu' );
+		} );
+
+
+
+        // Mobile only
+        var windowWidth,
+        mobileOnly = function () {
+            windowWidth = $( window ).width();
+
+            if ( windowWidth > 600 ) {
+                controller.close( 'demo-mobile-only' );
+            }
+        };
+
+        mobileOnly();
+        $( window ).on( 'resize', mobileOnly );
+
+        $( '.js-open-demo-mobile-only' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+
+            if ( windowWidth < 601 ) {
+                controller.open( 'demo-mobile-only' );
+            }
+		} );
+
+        $( '.js-toggle-demo-mobile-only' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+
+            if ( windowWidth < 601 ) {
+                controller.toggle( 'demo-mobile-only' );
+            }
+		} );
+
+        $( '.js-close-demo-mobile-only' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+			controller.close( 'demo-mobile-only' );
+		} );
+
+	} );
+} ) ( jQuery );
+    </script>
   </body>
 </html>
