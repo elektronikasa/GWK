@@ -4,6 +4,8 @@
 	background-color: #2d2d2d;
 	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
   display: block;
+  width: 100vw;
+  z-index: 1001;
 }
 
 #desktop-header header .logo {
@@ -39,6 +41,10 @@
 	height: 40px;
   line-height: 40px;
   border: solid 1px #2d2d2d;
+  color: #e6e2cb;
+}
+
+#desktop-header header nav ul li a {
   color: #e6e2cb;
 }
 

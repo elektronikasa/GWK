@@ -49,6 +49,14 @@ footer ul li {
   transition: all .3s ease-in-out;
 }
 
+footer ul li a {
+  color: #888888;
+}
+
+footer ul li a:hover {
+  color: #888888;
+}
+
 footer ul li .active {
   padding-left: 20px;
   padding-right: 20px;

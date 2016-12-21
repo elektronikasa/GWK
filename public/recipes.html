@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Project</title>
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Generate using http://realfavicongenerator.net/ -->
+
+
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+<style></style>
+
+  </head>
+  <body>
+    <div class="container-fluid" id="desktop-header" style="position: fixed; top: 0px; width: 100%; width: 100%; z-index: 1001;">
+<div class="row">
+  <header>
+    <div class="col-sm-1 col-xs-9">
+      <a href="/" class="opacity-hover"><img src="images/logo.svg" class="logo" alt="GWK Farms"></a>
+    </div>
+    <div class="col-sm-11 col-xs-3">
+      <nav>
+        <ul class="hidden-xs">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <!-- <li>Blog</li> -->
+          <li><a href="stockists.html">Stockists</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+</div>
+</div>
+
+    <div canvas="container" style="margin-top: 80px;">
+
+    <!-- start main content container -->
+    <div class="container-fluid" id="desktop-header">
+    
+  <div class="row">
+  <div class="col-sm-12">
+    <img src="images/recipes-banner.png" style="width: 100%; height: auto;">
+  </div>
+</div>
+
+
+    </div>
+    <!-- end main content container -->
+    <!-- start footer -->
+<footer>
+  <nav id="footer">
+    <a class="btn-scrollto-top opacity-hover hidden-xs" href="javascript:;"></a>
+    <ul class="hidden-xs">
+      <li><a href="/">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="promotions.html">Promotions</a></li>
+      <!-- <li>Blog</li> -->
+      <li><a href="stockists.html">Stockists</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="copyright-bar">
+    <p>Copyright © 2014 GWK. All rights reserved.</p>
+  </div>
+</footer>
+
+    </div>
+    <div off-canvas="mobile-menu left reveal">
+</div>
+
+<!-- Wrapper -->
+  <div class="visible-xs opacity-hover" id="fixed-position" style="position: absolute; top: -35px; right: 20px;">
+    <div class="spinner-master2">
+    <input type="checkbox" id="spinner-form2" />
+      <label for="spinner-form2" class="spinner-spin2">
+        <div class="spinner2 diagonal part-1"></div>
+        <div class="spinner2 horizontal"></div>
+        <div class="spinner2 diagonal part-2"></div>
+      </label>
+    </div>
+  </div>
+
+
+    
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+      <script src="javascripts/app.js"></script>
+      <script src="javascripts/plugins.js"></script>
+      <script src="https://www.adchsm.com/slidebars/bower_components/Slidebars/dist/slidebars.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+
+    <!-- custom page scripts -->
+    
+
+
+
+    <script type="text/javascript">
+
+    ( function ( $ ) {
+	$( function () {
+        /**
+         * Slidebars Controller
+         */
+
+        // Init
+		var controller = new slidebars();
+		controller.init();
+
+		// Toggle main menu
+		$( '.spinner-master2' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+			controller.toggle( 'mobile-menu' );
+		} );
+
+
+
+        // Mobile only
+        var windowWidth,
+        mobileOnly = function () {
+            windowWidth = $( window ).width();
+
+            if ( windowWidth > 600 ) {
+                controller.close( 'demo-mobile-only' );
+            }
+        };
+
+        mobileOnly();
+        $( window ).on( 'resize', mobileOnly );
+
+        $( '.js-open-demo-mobile-only' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+
+            if ( windowWidth < 601 ) {
+                controller.open( 'demo-mobile-only' );
+            }
+		} );
+
+        $( '.js-toggle-demo-mobile-only' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+
+            if ( windowWidth < 601 ) {
+                controller.toggle( 'demo-mobile-only' );
+            }
+		} );
+
+        $( '.js-close-demo-mobile-only' ).on( 'click', function ( event ) {
+			event.preventDefault();
+			event.stopPropagation();
+			controller.close( 'demo-mobile-only' );
+		} );
+
+	} );
+} ) ( jQuery );
+    </script>
+  </body>
+</html>

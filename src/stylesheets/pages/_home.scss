@@ -1,0 +1,109 @@
+.home-intro-block h2 {
+  font-family: 'AmsiProCond';
+  font-size: 55px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.0;
+	text-align: center;
+	color: #635f5c;
+}
+
+.home-intro-block p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.88;
+	text-align: center;
+	color: #828282;
+}
+
+.home-product-info {
+  padding: 0px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.home-product-info h2 {
+  font-size: 90px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	color: #635f5c;
+  font-family: 'AmsiProCond';
+  text-transform: uppercase;
+}
+
+.home-product-info p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.19;
+	color: #888888;
+}
+
+.home-product-info a {
+  height: 72px;
+	border-radius: 37px;
+	background-color: #d7404f;
+  line-height: 72px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: 'AmsiProCond';
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+  width: 258px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.home-product-info a:hover {
+  background-color: #463F3B;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.info-box {
+  width: 100%;
+	height: auto;
+	background-color: #f9f9f9;
+	box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.18);
+	border: solid 14px #ffffff;
+  text-align: center;
+  margin-top: 80px;
+  padding: 80px;
+  text-align: center;
+}
+
+.info-box h2 {
+  font-size: 90px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	color: #635f5c;
+  font-family: 'AmsiProCond';
+  text-transform: uppercase;
+}
+
+.info-box p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.19;
+	color: #888888;
+}
