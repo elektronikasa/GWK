@@ -1,0 +1,139 @@
+.recipe-heading {
+  font-family: 'AmsiProCond';
+  font-size: 16px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.88;
+	letter-spacing: 3px;
+	color: #fff6c0;
+}
+
+.recipe-name {
+  font-family: 'AmsiProCond';
+  font-size: 39px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.03;
+	text-align: center;
+	color: #ffffff;
+}
+
+.recipe-credits {
+  font-family: 'AmsiProCond';
+  font-size: 24px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.38;
+	text-align: center;
+	color: #f7faac;
+}
+
+.recipe-template-heading {
+  font-family: 'AmsiProCond';
+	font-size: 24px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.38;
+	letter-spacing: 4.1px;
+  text-align: center;
+	color: #f7faac;
+}
+
+.recipe-template-title {
+  font-family: 'AmsiProCond';
+	font-size: 66px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.76;
+	text-align: center;
+	color: #ffffff;
+}
+
+#recipe-header-position {
+  background-color: transparent;
+  position: absolute;
+  top: 150px;
+  left: 25%;
+  z-index: 999;
+}
+
+#ingredients-col {
+  background-color: #ffffff;
+	box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+#ingredients-col h3 {
+  font-family: 'AmsiProCond';
+	font-size: 42px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.33;
+	text-align: left;
+	color: #635f5c;
+}
+
+#ingredients-col h4 {
+  font-family: 'AmsiProCond';
+	font-size: 20px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 3.2;
+	color: #635f5c;
+}
+
+#ingredients-col p {
+  font-family: 'Roboto Slab', serif;
+	font-size: 21px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	color: #888888;
+}
+
+#instructions-col {
+  padding-top: 30px;
+  padding-bottom: 30px
+}
+
+#instructions-col h3 {
+  font-family: 'AmsiProCond';
+	font-size: 42px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.33;
+	text-align: left;
+	color: #635f5c;
+}
+
+#instructions-col p {
+  font-family: 'Roboto Slab', serif;
+	font-size: 21px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.67;
+	color: #888888;
+}
+
+.product-page-name {
+  font-family: 'AmsiProCond';
+  font-size: 16px;
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 0.88;
+	letter-spacing: 3px;
+	text-align: center;
+	color: #635f5c;
+  text-transform: uppercase;
+}

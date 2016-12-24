@@ -12,7 +12,7 @@
 .home-intro-block p {
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 1.88;
@@ -24,7 +24,10 @@
   padding: 0px;
   text-align: center;
   padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
+
 
 .home-product-info h2 {
   font-size: 90px;
@@ -39,7 +42,7 @@
 .home-product-info p {
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 2.19;
@@ -59,6 +62,7 @@
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
+  text-transform: uppercase;
   width: 258px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -101,7 +105,7 @@
 .info-box p {
   font-family: 'Roboto Slab', serif;
   font-size: 16px;
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 2.19;

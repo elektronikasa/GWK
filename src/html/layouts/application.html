@@ -49,63 +49,63 @@
     <script type="text/javascript">
 
     ( function ( $ ) {
-	$( function () {
-        /**
-         * Slidebars Controller
-         */
+      	$( function () {
+              /**
+               * Slidebars Controller
+               */
 
-        // Init
-		var controller = new slidebars();
-		controller.init();
+              // Init
+      		var controller = new slidebars();
+      		controller.init();
 
-		// Toggle main menu
-		$( '.spinner-master2' ).on( 'click', function ( event ) {
-			event.preventDefault();
-			event.stopPropagation();
-			controller.toggle( 'mobile-menu' );
-		} );
+      		// Toggle main menu
+      		$( '.spinner-master2' ).on( 'click', function ( event ) {
+      			event.preventDefault();
+      			event.stopPropagation();
+      			controller.toggle( 'mobile-menu' );
+      		} );
 
 
 
-        // Mobile only
-        var windowWidth,
-        mobileOnly = function () {
-            windowWidth = $( window ).width();
+              // Mobile only
+              var windowWidth,
+              mobileOnly = function () {
+                  windowWidth = $( window ).width();
 
-            if ( windowWidth > 600 ) {
-                controller.close( 'demo-mobile-only' );
-            }
-        };
+                  if ( windowWidth > 600 ) {
+                      controller.close( 'demo-mobile-only' );
+                  }
+              };
 
-        mobileOnly();
-        $( window ).on( 'resize', mobileOnly );
+              mobileOnly();
+              $( window ).on( 'resize', mobileOnly );
 
-        $( '.js-open-demo-mobile-only' ).on( 'click', function ( event ) {
-			event.preventDefault();
-			event.stopPropagation();
+              $( '.js-open-demo-mobile-only' ).on( 'click', function ( event ) {
+      			event.preventDefault();
+      			event.stopPropagation();
 
-            if ( windowWidth < 601 ) {
-                controller.open( 'demo-mobile-only' );
-            }
-		} );
+                  if ( windowWidth < 601 ) {
+                      controller.open( 'demo-mobile-only' );
+                  }
+      		} );
 
-        $( '.js-toggle-demo-mobile-only' ).on( 'click', function ( event ) {
-			event.preventDefault();
-			event.stopPropagation();
+              $( '.js-toggle-demo-mobile-only' ).on( 'click', function ( event ) {
+      			event.preventDefault();
+      			event.stopPropagation();
 
-            if ( windowWidth < 601 ) {
-                controller.toggle( 'demo-mobile-only' );
-            }
-		} );
+                  if ( windowWidth < 601 ) {
+                      controller.toggle( 'demo-mobile-only' );
+                  }
+      		} );
 
-        $( '.js-close-demo-mobile-only' ).on( 'click', function ( event ) {
-			event.preventDefault();
-			event.stopPropagation();
-			controller.close( 'demo-mobile-only' );
-		} );
+              $( '.js-close-demo-mobile-only' ).on( 'click', function ( event ) {
+      			event.preventDefault();
+      			event.stopPropagation();
+      			controller.close( 'demo-mobile-only' );
+      		} );
 
-	} );
-} ) ( jQuery );
+      	} );
+      } ) ( jQuery );
     </script>
   </body>
 </html>
